@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="control-button">
+        <span>Start Game</span>
+    </div>
+    <div class="container">
+        <div class="info">
+            <p>Hello : <span class="player"></span></p>
+            <p class="finish"></p>
+            
+            <button><p>Try Again:</p><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <p>Wrong Tries : <span class="tries">0</span></p>
+        </div>
+        <div class="memory-blocks">
+            <div class="block" data-technology="angular">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/ANGULAR.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="angular">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/ANGULAR.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="js">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/JS.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="js">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/JS.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="html">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/HTML.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="html">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/HTML.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="css">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/CSS.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="css">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/CSS.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="react">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/REACT.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="react">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/REACT.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="vue">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/VUE JS.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="vue">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/VUE JS.png" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="bootstrap">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/BOOTSTRAP.jpg" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="bootstrap">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/BOOTSTRAP.jpg" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="githup">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/GIT.jpg" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="githup">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/GIT.jpg" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="computer">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/computer.jpg" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="computer">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/computer.jpg" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="python">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/PYTHON.jpg" alt="">
+                </div>
+            </div>
+            <div class="block" data-technology="python">
+                <div class="box front"></div>
+                <div class="box back">
+                    <img src="img/PYTHON.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="finishGame">
+        <div class="pDiv">
+            <p>Congratulations, you won</p>
+        <p class="numTries">Number Of Tries : <span>0</span></p>
+        <p class="again">Play Again</p>
+        </div>
+    </div>
+    <audio id="success" src="img/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="img/fail.mp3" preload="auto"></audio>
+    <script src="js/main.js"></script>
+</body>
+</html>
